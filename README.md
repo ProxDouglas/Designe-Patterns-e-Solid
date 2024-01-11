@@ -132,7 +132,104 @@ public enum TypeVehicle {
 
 ​	"muitas interfaces de clientes específicas, são melhores do que uma para todos propósitos."
 
+​	Quando uma interface está com muitas fuções e por conta disso causa methodos vazios em classes que implementam a interface em questão, isso pode ser um problema futuro como no código a seguir 
+
+```java
+public interface IVhicle {
+    public void configureCar(String color, String year, double engine, int seats);
+    public void configureMotocycle(String color, String year, double engine);
+    public void startVehicle();
+}
+```
+
+​	
+
+```java
+package br.com.hcode.solid.isp;
+
+public class Car implements IVhicle, IVehicleCar {
+
+    private String color;
+    private String year;
+    private double engine;
+    private int seats;
+
+    public Car(String color, String year, double engine, int seats){
+
+        configureCar(color, year, engine, seats);
+    }
+    @Override
+    public void configureMotocycle(String color, String year, double engine){}
+
+    @Override
+    public void configureCar(String color, String year, double engine, int seats){
+        this.color = color;
+        this.year = year;
+        this.engine = engine;
+        this.seats = seats;
+
+        System.out.println("Criando um carro: " + color + " " + engine + " " + " com " + seats + " assentos");
+        startVehicle();
+    }
+
+    @Override
+    public void startVehicle(){
+        System.out.println("Ligando os motores");
+    }
+
+
+}
+
+```
+
+​	A solução para isso é dividir a interface em mais interfaces já que uma classe pode implementar diversas classes. (Exemplo em código)
+
 #### Dependency inversion principal
 
 ​	"deve-se depender de abstrações, não de objetos concretos."
+
+​	Um modulo de alto nível não pode depender de um modulo de baixo nível. Ambos dependem de abstrações. Abstrações não devem depender de detalhes.
+​	O modulo de alto nível é onde fica a regra de negócio, seria o que deve ser feito no produto e o de baixo nível é como eu devo fazer. Ex: O produto utiliza um banco de dados então o produto é alto nível e o banco de dados é baixo nível.
+
+##### Problema
+
+```java
+import payment.Payment;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Payment payment = new Payment();
+        payment.pay("250");
+    }
+}
+```
+
+```java
+package model;
+
+public class MySQLProduct {
+    public String getProductById(String productID){
+        return "Mysql: exibindo dados do produto " + productID;
+    }
+}
+
+```
+
+```java
+package payment;
+
+import model.MySQLProduct;
+
+public class Payment {
+    public void pay(String productID){
+        MySQLProduct dbProduct = new MySQLProduct();
+        String product = dbProduct.getProductById(productID);
+        System.out.println(product);
+    }
+}
+
+```
+
+##### Solução em código 
 
