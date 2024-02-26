@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/DesignePatterns/AbstractFactory/AbstractFactory.iml" filepath="$PROJECT_DIR$/DesignePatterns/AbstractFactory/AbstractFactory.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Designe-Patterns-e-Solid.iml" filepath="$PROJECT_DIR$/.idea/Designe-Patterns-e-Solid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DesignePatterns/FactoryMethod/FactoryMethod.iml" filepath="$PROJECT_DIR$/DesignePatterns/FactoryMethod/FactoryMethod.iml" />
       <module fileurl="file://$PROJECT_DIR$/solid/dip/dip.iml" filepath="$PROJECT_DIR$/solid/dip/dip.iml" />
       <module fileurl="file://$PROJECT_DIR$/solid/isp/isp.iml" filepath="$PROJECT_DIR$/solid/isp/isp.iml" />
       <module fileurl="file://$PROJECT_DIR$/solid/lsp/lsp.iml" filepath="$PROJECT_DIR$/solid/lsp/lsp.iml" />

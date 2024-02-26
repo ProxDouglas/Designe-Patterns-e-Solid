@@ -233,3 +233,41 @@ public class Payment {
 
 ##### Solução em código 
 
+## Designe Patterns 
+
+https://refactoring.guru/
+
+Christopher Alexander
+
+* A Pattern Language(08/1977)
+
+### GOF  - Gang of Four
+
+**Autores** 
+
+Erich Gamma
+Richard Helm 
+Ralph Johson
+John Vlissides
+
+* Designe Patterns 
+
+### Factory Method
+
+[Factory Method (refactoring.guru)](https://refactoring.guru/pt-br/design-patterns/factory-method)
+
+​	Nós delegamos a instância de classes para a subclasses, ou seja não é a classe principal que cria a instância. 
+​	Neste padrão você deve substituir as chamadas diretas de construção de objetos da classe para um método intermediário que fará o papel de fábrica, este método fabrica ou factory method, irá controlar como criar os objetos que estendem a sua classe serão instânciados.
+​	Os objetos retornados pelo método fabrica são chamadas de produtos ou classes Concretas.
+​	Assim temos em nosso cenário a classe Veículo que implementa a interface Transporte e as subclasses concretas carros, motos, bicicletas que herdam de veículo e implementar os métodos declarados na interface.
+​	A limitação fica por conta das subclasses . Caso estas retornem valores diferentes, precisam compartilhar a mesma classe ou interface base deve ter a interface como o seu tipo de retorno.
+
+![Captura de tela 2024-01-12 141318](C:\Users\dsantos\Desktop\Estudos\Designe-Patterns-e-Solid\Captura de tela 2024-01-12 141318.png)
+
+
+
+### Abstract Factory
+
+[Abstract Factory (refactoring.guru)](https://refactoring.guru/pt-br/design-patterns/abstract-factory)
+
+![image-20240115102753903](C:\Users\dsantos\AppData\Roaming\Typora\typora-user-images\image-20240115102753903.png)
