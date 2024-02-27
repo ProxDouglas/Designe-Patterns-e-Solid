@@ -262,7 +262,7 @@ John Vlissides
 ​	Assim temos em nosso cenário a classe Veículo que implementa a interface Transporte e as subclasses concretas carros, motos, bicicletas que herdam de veículo e implementar os métodos declarados na interface.
 ​	A limitação fica por conta das subclasses . Caso estas retornem valores diferentes, precisam compartilhar a mesma classe ou interface base deve ter a interface como o seu tipo de retorno.
 
-![Captura de tela 2024-01-12 141318](C:\Users\dsantos\Desktop\Estudos\Designe-Patterns-e-Solid\Captura de tela 2024-01-12 141318.png)
+![Captura de tela 2024-01-12 141318](C:\Users\dsantos\Desktop\Estudos\Designe-Patterns-e-Solid\images\Captura de tela 2024-01-12 141318.png)
 
 
 
@@ -270,4 +270,12 @@ John Vlissides
 
 [Abstract Factory (refactoring.guru)](https://refactoring.guru/pt-br/design-patterns/abstract-factory)
 
-![image-20240115102753903](C:\Users\dsantos\AppData\Roaming\Typora\typora-user-images\image-20240115102753903.png)
+![image-20240115102753903](C:\Users\dsantos\Desktop\Estudos\Designe-Patterns-e-Solid\images\image-20240115102753903.png)
+
+
+
+### Builder 
+
+https://refactoring.guru/pt-br/design-patterns/builder
+
+### https://refactoring.guru/images/patterns/diagrams/builder/structure.png
