@@ -252,7 +252,11 @@ John Vlissides
 
 * Designe Patterns 
 
-### Factory Method
+
+
+### Criacional 
+
+#### Factory Method
 
 [Factory Method (refactoring.guru)](https://refactoring.guru/pt-br/design-patterns/factory-method)
 
@@ -266,7 +270,7 @@ John Vlissides
 
 
 
-### Abstract Factory
+#### Abstract Factory
 
 [Abstract Factory (refactoring.guru)](https://refactoring.guru/pt-br/design-patterns/abstract-factory)
 
@@ -274,8 +278,24 @@ John Vlissides
 
 
 
-### Builder 
+#### Builder 
 
 https://refactoring.guru/pt-br/design-patterns/builder
 
 ### https://refactoring.guru/images/patterns/diagrams/builder/structure.png
+
+
+
+#### Prototype 
+
+https://refactoring.guru/design-patterns/prototype
+
+O prototype é basicamente criar uma classe com um constructor que recebe um objeto do mesmo tipo da classe ou um objeto de um tipo relacionado para clonar o Objeto original.
+
+
+
+### Estrutural
+
+#### Adapter 
+
+https://refactoring.guru/design-patterns/adapter
