@@ -299,3 +299,9 @@ O prototype é basicamente criar uma classe com um constructor que recebe um obj
 #### Adapter 
 
 https://refactoring.guru/design-patterns/adapter
+
+
+
+### Chain of responsability 
+
+​	Esse designe patterns se baseia em organizar diversas etapas que necessitam ser executadas de maneira sequencial de modo a parar a execução caso alguma etapa no meio do processo de algo errado como validou e recusou um objeto analisado. Ou seja em um  processo de validação de 3 etapas caso não passe da validação na primeira ele não executará a segunda nem a terceira.
