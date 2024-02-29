@@ -304,4 +304,4 @@ https://refactoring.guru/design-patterns/adapter
 
 ### Chain of responsability 
 
-​	Esse designe patterns se baseia em organizar diversas etapas que necessitam ser executadas de maneira sequencial de modo a parar a execução caso alguma etapa no meio do processo de algo errado como validou e recusou um objeto analisado. Ou seja em um  processo de validação de 3 etapas caso não passe da validação na primeira ele não executará a segunda nem a terceira.
+​	Esse designe patterns se baseia em organizar diversas etapas que necessitam ser executadas de maneira sequencial de modo a parar a execução caso alguma etapa no meio do processo de algo errado como validou e recusou um objeto analisado. Ou seja em um  processo de validação de 3 etapas caso não passe da validação na primeira ele não executará a segunda nem a terceira. Uma maneira de executar esse designe patterns é uma função que chama outra criando assim algo semelhante a uma lista ligada de funções.
